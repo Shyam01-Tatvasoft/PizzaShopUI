@@ -1,20 +1,48 @@
 let eyeButton = document.getElementById("eye-icon");
+let eyeButtonResetPass1 = document.getElementById("resetPassEyeBtn1");
+let eyeButtonResetPass2 = document.getElementById("resetPassEyeBtn2");
 let passwordField = document.getElementById("Password");
+let passwordResetField1 = document.getElementById("PasswordReset1");
+let passwordResetField2 = document.getElementById("PasswordReset2");
+
 let loginForm = document.getElementById("loginForm");
 
 let LoginHandler = (data) => {
   console.log(data);
 };
 
-eyeButton.addEventListener("click", () => {
+eyeButton?.addEventListener("click", () => {
   if (passwordField.type == "password") {
     passwordField.type = "text";
-    eyeButton.classList.add("fa-eye");
-    eyeButton.classList.remove("fa-eye-slash");
-  } else {
-    passwordField.type = "password";
     eyeButton.classList.remove("fa-eye");
     eyeButton.classList.add("fa-eye-slash");
+  } else {
+    passwordField.type = "password";
+    eyeButton.classList.add("fa-eye");
+    eyeButton.classList.remove("fa-eye-slash");
   }
 });
 
+eyeButtonResetPass1?.addEventListener("click", () => {
+  if (passwordResetField1.type == "password") {
+    passwordResetField1.type = "text";
+    eyeButtonResetPass1.classList.remove("fa-eye");
+    eyeButtonResetPass1.classList.add("fa-eye-slash");
+  } else {
+    passwordResetField1.type = "password";
+    eyeButtonResetPass1.classList.add("fa-eye");
+    eyeButtonResetPass1.classList.remove("fa-eye-slash");
+  }
+});
+
+eyeButtonResetPass2.addEventListener("click", () => {
+  if (passwordResetField2.type == "password") {
+    passwordResetField2.type = "text";
+    eyeButtonResetPass2.classList.remove("fa-eye");
+    eyeButtonResetPass2.classList.add("fa-eye-slash");
+  } else {
+    passwordResetField2.type = "password";
+    eyeButtonResetPass2.classList.add("fa-eye");
+    eyeButtonResetPass2.classList.remove("fa-eye-slash");
+  }
+});
