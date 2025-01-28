@@ -30,7 +30,10 @@
 }
 
 @media (max-width:768px){
-    /* #login-form-section{
-        width: 100%;
-    } */
+    #login-form-section{
+        background-image: url(../images/pizzashop-bg-blure.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
 }
