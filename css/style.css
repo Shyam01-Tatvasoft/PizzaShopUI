@@ -29,6 +29,33 @@
     top: 20%;
 }
 
+/* Sidebar */
+
+
+
+
+/* User List */
+.user-table th{
+    color: gray;
+}
+.user-table td{
+    color: gray;
+}
+.userForm-active-btn{
+    border-radius: 5px;
+    background-color: rgb(144, 219, 32);
+    text-align: center;
+    width: 70px;
+    color: white;
+}
+.userForm-inactive-btn{
+    border-radius: 5px;
+    background-color: red;
+    text-align: center;
+    width: 70px;
+    color: white;
+}
+
 @media (max-width:768px){
     #login-form-section{
         background-image: url(../images/pizzashop-bg-blure.jpg);

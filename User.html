@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row border vh-100">
+        <!-- sidebar -->
+        <div
+          class="col-md-2 border bg-info-subtle mt-4 d-none d-md-block"
+          id="sidebar"
+        ></div>
+        <div class="col-md-10 border">
+          <!-- navbar -->
+          <nav
+            class="navbar navbar-expanded-lg bg-primary bg-gradient justify-content-end align-items-center navbar-light fixed-top"
+            style="height: 50px"
+          >
+            <img
+              src="./images/icons/customer.svg"
+              alt="User-icon"
+              class="me-3"
+            />
+          </nav>
+
+          <!-- dashboard -->
+          <div class="col-12 mt-5">
+            <!-- User header -->
+            <div class="row align-items-center d-flex flex-wrap">
+              <h1 class="text-primary col-2">Users</h1>
+              <div class="col-10 d-flex justify-content-end">
+                <div class="form-input-div my-3 me-3">
+                  <input
+                    type="text"
+                    placeholder="Search*"
+                    class="form-control p-2 d-none d-sm-block"
+                    name="search"
+                    minlength="5"
+                    required
+                    id="search"
+                  />
+                  <span class="form-input-icon"
+                    ><i
+                      class="fa-solid fa-search"
+                      id="eye-icon"
+                      style="color: gray"
+                    ></i>
+                  </span>
+                </div>
+                <button type="button" class="btn btn-primary my-3">
+                  + Add User
+                </button>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <section class="table-responsive">
+              <table class="table user-table shadow">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      Name <i class="fa-solid fa-up-long"></i
+                      ><i class="fa-solid fa-down-long"></i>
+                    </th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">
+                      Role
+                      <span
+                        ><i class="fa-solid fa-up-long"></i
+                        ><i class="fa-solid fa-down-long"></i
+                      ></span>
+                    </th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-devider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><p class="userForm-active-btn">Active</p></td>
+                    <td>
+                      <i class="fa-solid fa-pen me-3"></i
+                      ><i class="fa-regular fa-trash-can"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><p class="userForm-active-btn">Active</p></td>
+                    <td>
+                      <i class="fa-solid fa-pen me-3"></i
+                      ><i class="fa-regular fa-trash-can"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><p class="userForm-inactive-btn">Inactive</p></td>
+                    <td>
+                      <i class="fa-solid fa-pen me-3"></i
+                      ><i class="fa-regular fa-trash-can"></i>
+                    </td>
+                  </tr>
+                  <!-- <tfoot> -->
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="d-flex justify-content-end me-0 align-items-center" >
+                      <p class="mb-0">Items Per page</p>
+                      <select class="ms-3" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                      </select>
+                      <p class="mb-0 ms-2">Select 1 out of 12</p>
+                      <button class="btn btn-light"><i class="fa-solid fa-less-than"></i></button>
+                      <button class="btn btn-light"><i class="fa-solid fa-greater-than"></i></button>
+                    </td>
+                  </tr>
+
+                  <!-- </tfoot> -->
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/custome.js"></script>
+  </body>
+</html>
