@@ -1,9 +1,11 @@
 let eyeButton = document.getElementById("eye-icon");
 let eyeButtonResetPass1 = document.getElementById("resetPassEyeBtn1");
 let eyeButtonResetPass2 = document.getElementById("resetPassEyeBtn2");
+let eyeButtonAddUserPass = document.getElementById("addUserEyeBtn");
 let passwordField = document.getElementById("Password");
 let passwordResetField1 = document.getElementById("PasswordReset1");
 let passwordResetField2 = document.getElementById("PasswordReset2");
+let passwordAddUserField = document.getElementById("addUserPassword");
 
 let loginForm = document.getElementById("loginForm");
 
@@ -35,7 +37,7 @@ eyeButtonResetPass1?.addEventListener("click", () => {
   }
 });
 
-eyeButtonResetPass2.addEventListener("click", () => {
+eyeButtonResetPass2?.addEventListener("click", () => {
   if (passwordResetField2.type == "password") {
     passwordResetField2.type = "text";
     eyeButtonResetPass2.classList.remove("fa-eye");
@@ -46,3 +48,15 @@ eyeButtonResetPass2.addEventListener("click", () => {
     eyeButtonResetPass2.classList.remove("fa-eye-slash");
   }
 });
+
+eyeButtonAddUserPass?.addEventListener("click",()=>{
+  if (passwordAddUserField.type == "password") {
+    passwordAddUserField.type = "text";
+    eyeButtonAddUserPass.classList.remove("fa-eye");
+    eyeButtonAddUserPass.classList.add("fa-eye-slash");
+  } else {
+    passwordAddUserField.type = "password";
+    eyeButtonAddUserPass.classList.add("fa-eye");
+    eyeButtonAddUserPass.classList.remove("fa-eye-slash");
+  }
+})

@@ -41,20 +41,38 @@
 .user-table td{
     color: gray;
 }
-.userForm-active-btn{
+.user-active{
     border-radius: 5px;
     background-color: rgb(144, 219, 32);
     text-align: center;
     width: 70px;
     color: white;
 }
-.userForm-inactive-btn{
+.user-inactive{
     border-radius: 5px;
     background-color: red;
     text-align: center;
     width: 70px;
     color: white;
 }
+
+#aleret-icon{
+    width: 35px;
+    height: 35px;
+}
+.border-btn {
+    border: 2px dashed #006098;
+    background-color: white;
+    color: #006098;
+    border-radius: 10px;
+    padding: 7px;
+  }
+  
+  .border-btn:hover {
+    border: 2px solid #006098;
+    background-color: #006098;
+    color: white;
+  }
 
 @media (max-width:768px){
     #login-form-section{
