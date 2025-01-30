@@ -1,88 +1,145 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Login Page */
-#login-page{
-    height: 100vh;
-    width: 100%;
+#login-page {
+  height: 100vh;
+  width: 100%;
 }
 
-#login-img{
-    object-fit: cover;
+#login-img {
+  object-fit: cover;
 }
 
-#pizzashop_logo{
-    width: 60px;
-    height: 50px;
+#pizzashop_logo {
+  width: 60px;
+  height: 50px;
 }
 
-.form-input-div{
-    position: relative;
+.form-input-div {
+  position: relative;
 }
 
-.form-input-icon{
-    position: absolute;
-    right: 10px;
-    top: 20%;
+.form-input-icon {
+  position: absolute;
+  right: 10px;
+  top: 20%;
 }
 
 /* Sidebar */
 
-
-
-
 /* User List */
-.user-table th{
-    color: gray;
+.user-table th {
+  color: gray;
 }
-.user-table td{
-    color: gray;
+.user-table td {
+  color: gray;
 }
-.user-active{
-    border-radius: 5px;
-    background-color: rgb(144, 219, 32);
-    text-align: center;
-    width: 70px;
-    color: white;
+.user-active {
+  border-radius: 5px;
+  background-color: rgb(144, 219, 32);
+  text-align: center;
+  width: 70px;
+  color: white;
 }
-.user-inactive{
-    border-radius: 5px;
-    background-color: red;
-    text-align: center;
-    width: 70px;
-    color: white;
+.user-inactive {
+  border-radius: 5px;
+  background-color: red;
+  text-align: center;
+  width: 70px;
+  color: white;
 }
 
-#aleret-icon{
-    width: 35px;
-    height: 35px;
+#aleret-icon {
+  width: 35px;
+  height: 35px;
 }
 .border-btn {
-    border: 2px dashed #006098;
-    background-color: white;
-    color: #006098;
-    border-radius: 10px;
-    padding: 7px;
-  }
-  
-  .border-btn:hover {
-    border: 2px solid #006098;
-    background-color: #006098;
+  border: 2px dashed #006098;
+  background-color: white;
+  color: #006098;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.border-btn:hover {
+  border: 2px solid #006098;
+  background-color: #006098;
+  color: white;
+}
+
+.content-bg {
+  background-color: #f2f3f4;
+}
+
+.user-icon{
+   width: 30px;
+   height: 30px; 
+}
+
+
+/* Menu */
+.tab-link.active {
+  color: #006098 !important;
+  border-bottom: 2px solid #006098;
+}
+
+.tab-link:hover {
+  color: #006098 !important;
+}
+.tab-link {
+  color: black;
+  font-size: large;
+}
+
+/* .category-list {
+  overflow-y: scroll;
+} */
+
+.item-category-btn {
+  color: gray;
+  transition: 0.4s ease;
+}
+.item-category-btn:hover {
+  color: #006098;
+  background-color: white;
+}
+.item-category-btn:hover > .edit-delete-icon{
+    display: block;
+}
+.edit-delete-icon{
+    display: none;
+    height: 20px;
+}
+.edit-delete-icon>i{
+    cursor: pointer;
+}
+
+.category-btn-icon {
+  transform: rotate(90deg);
+  margin-right: 3px;
+}
+.menu-table>td{
+    display: flex !important;
+    justify-content: center;
+    margin: auto;
+}
+
+/* switch */
+.switch-btn{
+    height: 25px;
+    width: 45px !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  #login-form-section {
+    background-image: url(../images/pizzashop-bg-blure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
   }
-
-  .content-bg{
-    background-color: #f2f3f4;
-  }
-
-@media (max-width:768px){
-    #login-form-section{
-        background-image: url(../images/pizzashop-bg-blure.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-    }
 }
