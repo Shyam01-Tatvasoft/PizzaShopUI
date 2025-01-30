@@ -75,9 +75,9 @@
   background-color: #f2f3f4;
 }
 
-.user-icon{
-   width: 30px;
-   height: 30px; 
+.user-icon {
+  width: 30px;
+  height: 30px;
 }
 
 /* Menu */
@@ -94,9 +94,10 @@
   font-size: large;
 }
 
-/* .category-list {
-  overflow-y: scroll;
-} */
+.category-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
 
 .item-category-btn {
   color: gray;
@@ -106,40 +107,38 @@
   color: #006098;
   background-color: white;
 }
-.item-category-btn:hover > .edit-delete-icon{
-    display: block;
+.item-category-btn:hover > .edit-delete-icon {
+  display: block;
 }
-.edit-delete-icon{
-    display: none;
-    height: 20px;
+.edit-delete-icon {
+  display: none;
+  height: 20px;
 }
-.edit-delete-icon>i{
-    cursor: pointer;
+.edit-delete-icon > i {
+  cursor: pointer;
 }
 
 .category-btn-icon {
   transform: rotate(90deg);
   margin-right: 3px;
 }
-.menu-table>td{
-    display: flex !important;
-    justify-content: center;
-    margin: auto;
+.menu-table > td {
+  display: flex !important;
+  justify-content: center;
+  margin: auto;
 }
 
 /* switch */
-.switch-btn{
-    height: 25px;
-    width: 45px !important;
-    box-shadow: none !important;
+.switch-btn {
+  height: 25px;
+  width: 45px !important;
+  box-shadow: none !important;
 }
-
 
 /* Permission */
-.permission-table>th{
-    height: 55px !important;
+.permission-table > th {
+  height: 55px !important;
 }
-
 
 @media (max-width: 768px) {
   #login-form-section {
