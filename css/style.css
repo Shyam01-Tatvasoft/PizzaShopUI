@@ -74,6 +74,10 @@
     color: white;
   }
 
+  .content-bg{
+    background-color: #f2f3f4;
+  }
+
 @media (max-width:768px){
     #login-form-section{
         background-image: url(../images/pizzashop-bg-blure.jpg);
