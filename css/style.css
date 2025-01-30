@@ -126,6 +126,22 @@
   display: flex !important;
   justify-content: center;
   margin: auto;
+  color: gray;
+}
+
+/* Modifier */
+.modifier-table td{
+    height: 55px !important;
+    color: gray !important;
+    align-items: center;
+}
+
+.modifier-section{
+    height: 550px;
+}
+
+.main-container{
+    height: 100vh;
 }
 
 /* switch */
@@ -146,5 +162,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+  }
+
+  .main-container{
+    height: 100%;
   }
 }
