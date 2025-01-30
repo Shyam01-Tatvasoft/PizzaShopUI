@@ -140,6 +140,7 @@
     height: 550px;
 }
 
+/* Full screen height for all page */
 .main-container{
     height: 100vh;
 }
