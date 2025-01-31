@@ -125,6 +125,11 @@
   color: gray;
 }
 
+.dining-menu-icon{
+  height: 40px; 
+  width: 40px;
+}
+
 /* Modifier */
 .modifier-table td {
   height: 55px !important;
