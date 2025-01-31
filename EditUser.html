@@ -37,94 +37,112 @@
             />
           </nav>
 
-          
           <div class="col-12 pt-5">
             <!-- Edit User header -->
             <div class="row align-items-center d-flex flex-wrap">
               <h1 class="fs-4 col-6 col-md-3 text-primary">Edit User</h1>
               <div class="col-6 col-md-9 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary my-3">
-                  <a
-                    href="./User.html"
-                    style="text-decoration: none; color: white"
-                    ><i class="fa-solid fa-less-than"></i> Back</a
-                  >
-                </button>
+                <a href="./User.html" style="text-decoration: none"
+                  ><button type="button" class="btn btn-outline-primary my-3">
+                    <i class="fa-solid fa-less-than"></i> Back
+                  </button>
+                  </a>
               </div>
             </div>
 
             <!-- Form -->
             <div class="shadow card container-fluid p-3">
-              <form action="" class="row needs-validation ">
+              <form action="" class="row needs-validation">
                 <div>
-                  <div class="row ">
-                    <div class="col-md-6 my-3">
-                      <input
-                        type="text"
-                        placeholder="First Name*"
-                        class="form-control p-2"
-                        name="firstName"
-                        required
-                      />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="firstName"
+                          class="form-control"
+                          id="firstName"
+                          placeholder="firstName"
+                          name="firstName"
+                          required
+                        />
+                        <label for="firstName">First Name</label>
+                      </div>
                     </div>
-                    <div class="col-md-6 my-3">
-                      <input
-                        type="text"
-                        placeholder="Last Name"
-                        class="form-control p-2"
-                        name="lastName"
-                        required
-                      />
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lastName"
+                          placeholder="lastName"
+                          name="lastName"
+                          required
+                        />
+                        <label for="lastName">lastName</label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div class="row">
-                    <div class="my-3 col-md-6">
-                      <input
-                        type="text"
-                        placeholder="User Name*"
-                        class="form-control p-2"
-                        name="userName"
-                        required
-                      />
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="userName"
+                          placeholder="name"
+                          name="userName"
+                          required
+                        />
+                        <label for="userName">User Name</label>
+                      </div>
                     </div>
-                    <div class="col-md-6 my-3 form-floating">
-                      <select
-                        class="form-select"
-                        id="select-role"
-                        aria-label="Select Role"
-                      >
-                        <option selected>Open this select menu</option>
-                        <option value="1">Admin</option>
-                        <option value="2">Account Manager</option>
-                        <option value="3">Chef</option>
-                      </select>
-                      <label for="select-role">Role</label>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <select
+                          class="form-select"
+                          id="select-role"
+                          aria-label="Role"
+                          required
+                        >
+                          <option selected>Open this select menu</option>
+                          <option value="1">Admin</option>
+                          <option value="2">Account</option>
+                          <option value="3">chef</option>
+                        </select>
+                        <label for="floatingSelect">Role</label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div class="row">
-                    <div class="my-3 col-md-6">
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        class="form-control p-2"
-                        name="email"
-                        required
-                      />
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                          name="email"
+                          required
+                        />
+                        <label for="floatingInput">Email address</label>
+                      </div>
                     </div>
-                    <div class="form-input-div col-md-6 my-3">
-                      <input
-                        type="password"
-                        placeholder="Password"
-                        class="form-control p-2"
-                        name="Password"
-                        minlength="5"
-                        required
-                        id="addUserPassword"
-                      />
+                    <div class="form-input-div col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="addUserPassword"
+                          placeholder="Password"
+                          name="password"
+                          required
+                        />
+                        <label for="addUserPassword">Password</label>
+                      </div>
                       <span class="form-input-icon me-3"
                         ><i
                           class="fa-solid fa-eye"
@@ -136,7 +154,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="row my-3 d-flex justify-content-center px-3">
+                  <div class="row mb-3 d-flex justify-content-center px-3">
                     <div
                       class="col-md-12 border-btn d-flex p-0 justify-content-center"
                     >
@@ -157,82 +175,100 @@
                 </div>
                 <div>
                   <div class="row">
-                    <div class="col-md-4 form-floating">
-                      <select
-                        class="form-select"
-                        id="select-country"
-                        aria-label="Select Country"
-                      >
-                        <option selected>Select Country</option>
-                        <option value="1">Admin</option>
-                        <option value="2">Account Manager</option>
-                        <option value="3">Chef</option>
-                      </select>
-                      <label for="select-country">Country</label>
+                    <div class="col-md-4">
+                      <div class="form-floating mb-3">
+                        <select
+                          class="form-select"
+                          id="select-country"
+                          aria-label="Select Country"
+                          required
+                        >
+                          <option selected>Select Country</option>
+                          <option value="1">Admin</option>
+                          <option value="2">Account Manager</option>
+                          <option value="3">Chef</option>
+                        </select>
+                        <label for="select-country">Country</label>
+                      </div>
                     </div>
-                    <div class="col-md-4 form-floating">
-                      <select
-                        class="form-select"
-                        id="select-state"
-                        aria-label="Select State"
-                      >
-                        <option selected>Select State</option>
-                        <option value="1">Admin</option>
-                        <option value="2">Account Manager</option>
-                        <option value="3">Chef</option>
-                      </select>
-                      <label for="select-state">State</label>
+                    <div class="col-md-4">
+                      <div class="form-floating mb-3">
+                        <select
+                          class="form-select"
+                          id="select-state"
+                          aria-label="Select State"
+                          required
+                        >
+                          <option selected>Select State</option>
+                          <option value="1">Admin</option>
+                          <option value="2">Account Manager</option>
+                          <option value="3">Chef</option>
+                        </select>
+                        <label for="select-state">State</label>
+                      </div>
                     </div>
-                    <div class="col-md-4 form-floating">
-                      <select
-                        class="form-select"
-                        id="select-city"
-                        aria-label="Select City"
-                      >
-                        <option selected>Select City</option>
-                        <option value="1">Admin</option>
-                        <option value="2">Account Manager</option>
-                        <option value="3">Chef</option>
-                      </select>
-                      <label for="select-city">City</label>
+                    <div class="col-md-4">
+                      <div class="form-floating mb-3">
+                        <select
+                          class="form-select"
+                          id="select-city"
+                          aria-label="Select City"
+                          required
+                        >
+                          <option selected>Select City</option>
+                          <option value="1">Admin</option>
+                          <option value="2">Account Manager</option>
+                          <option value="3">Chef</option>
+                        </select>
+                        <label for="select-city">City</label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div class="row">
-                    <div class="col-md-4 my-3">
-                      <input
-                        type="text"
-                        placeholder="Zipcode"
-                        class="form-control p-2"
-                        name="zipcode"
-                        required
-                      />
+                    <div class="col-md-4">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          placeholder="Zipcode"
+                          class="form-control p-2"
+                          name="zipcode"
+                          required
+                        />
+                        <label for="zipcode">Zipcode</label>
+                      </div>
                     </div>
-                    <div class="col-md-4 my-3">
-                      <input
-                        type="text"
-                        placeholder="Address"
-                        class="form-control p-2"
-                        name="address"
-                        required
-                      />
+                    <div class="col-md-4">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          placeholder="Address"
+                          class="form-control p-2"
+                          name="address"
+                          required
+                        />
+                        <label for="address">Address</label>
+                      </div>
                     </div>
-                    <div class="col-md-4 my-3">
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        class="form-control p-2"
-                        name="phone"
-                        required
-                      />
+                    <div class="col-md-4">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          placeholder="Phone"
+                          class="form-control p-2"
+                          name="phone"
+                          required
+                        />
+                        <label for="phone">Phone</label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div class="mt-2">
                     <button class="btn btn-primary" type="submit">
-                      Edit User
+                      Update User
                     </button>
                     <button class="btn btn-outline-primary">Cancel</button>
                   </div>
