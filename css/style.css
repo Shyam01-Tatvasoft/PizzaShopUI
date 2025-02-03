@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --textBlue: #006098;
+}
+
 /* Login Page */
 #login-page {
   height: 100vh;
@@ -30,6 +34,51 @@
 }
 
 /* Sidebar */
+#sidebar {
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#sidebar ul{
+  /* margin-top: 40px; */
+}
+
+#sidebar ul a{
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+}
+
+#sidebar ul a:hover{
+  background-color: rgba(211, 211, 211, 0.384);
+  color: var(--textBlue);
+} 
+#sidebar li {
+  list-style-type: none;
+  /* margin: 10px 0px 10px 0px; */
+  height: 43px;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  position: relative;
+  padding-left:10%;
+  align-items: center;
+  font-size: medium;
+}
+.sidebar-header{
+  background-color: white;
+}
+
+
+/* Navbar */
+.navbar{
+  height: 50px; 
+  /* z-index: -1; */
+  background-color: var(--textBlue);
+}
+
 
 /* User List */
 .user-table th {
@@ -161,16 +210,60 @@
 .main-container {
   height: 100vh;
 }
+.textBlue{
+  color: var(--textBlue);
+}
 
 @media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.visible {
+    background-color: aqua;
+    transform: translateX(0); 
+  }
+
+  /* #login-form-section {
+    background-image: url(../images/pizzashop-bg-blure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  } */
+
+  .main-container {
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 1024px) {
   #login-form-section {
+    width: 100%;
     background-image: url(../images/pizzashop-bg-blure.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
   }
 
-  .main-container {
-    height: 100%;
+  #login-page .login-img{
+    display: none !important;
   }
+
+  /* .offcanvas-lg.offcanvas-start {
+    width: 230px !important;
+  } */
+}
+
+@media (max-width:992px) {
+  /* .offcanvas-lg.offcanvas-start {
+    width: 230px;
+  } */
+  #sidebar-cancel-btn{
+    display: block !important;
+  }
+  /* #menu-icon{
+    display: block !important;
+  } */
 }
