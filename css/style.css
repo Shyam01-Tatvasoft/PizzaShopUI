@@ -70,6 +70,7 @@
 }
 .sidebar-header{
   background-color: white;
+  z-index: 2;
 }
 #sidebar-cancel-btn{
   display: none;
@@ -275,11 +276,5 @@
   }
   #sidebar-cancel-btn{
     display: block;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar{
-    z-index: -1;
   }
 }
